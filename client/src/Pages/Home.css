@@ -1,0 +1,17 @@
+.btn {
+    cursor: pointer;
+    display: block;
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem ;
+    text-decoration: none;
+    background: #129856;
+    border: none;
+    
+}
+a {
+    text-decoration: none;
+}
+.btn:hover {
+    border-radius: 15%;
+}

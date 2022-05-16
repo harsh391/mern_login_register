@@ -1,0 +1,45 @@
+.registerContainer{
+    display: grid;
+    place-items: center;
+    max-width: 80%;
+    padding:0 2rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    border: 2px solid #0f158b;
+}
+.registerContainer h1{
+    text-align: center;
+}
+.registerFormRow{
+    display: grid;
+}
+.registerLabel{
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    color: #000000;
+}
+.registerInput {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+.registerBtnContainer {
+    display: flex;
+    margin: 0;
+}
+.registerBtn{
+    cursor: pointer;
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background: #129856;
+    border: none;
+}
+.registerLinkText {
+    font-size: 1rem;
+}
+.registerLinkText a {
+    color: darkblue;
+    text-decoration: underline;
+}
