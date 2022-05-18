@@ -1,3 +1,10 @@
+.home{
+    display: grid;
+    justify-content: center;
+}
+.home h1{
+    text-align: left;
+}
 .btn {
     cursor: pointer;
     display: block;

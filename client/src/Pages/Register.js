@@ -45,10 +45,11 @@ const Register = () => {
           <input type="text" name='password' value={user.password} onChange={handleChange} className='registerInput'/>
         </div>
         <div className="registerBtnContainer">
-          <button className='registerBtn' onClick={handleSubmit}>Register</button>
+          <button className='btn registerBtn' onClick={handleSubmit}>Register</button>
           {/* <Link to='/login' className='registerBtn'><button>Login</button></Link> */}
         </div>
         <p className='registerLinkText'>Already have an account? Click to <Link to='/login'>Login</Link></p>
+        <Link to='/'><button className='btn registerBtn'>Home</button></Link>
       </div>
     </section>
   )

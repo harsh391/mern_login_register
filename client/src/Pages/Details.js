@@ -7,6 +7,7 @@ import axios from 'axios'
 
 const Details = () => {
   const state = useContext(GlobalState)
+  const [isLoading,setIsLoading] = useState(false);
   const [token] = state.token
   const [isLogged]= state.UsersAPI.isLogged
   const [user,setUser] = useState({})
@@ -15,19 +16,23 @@ const Details = () => {
         if(token) {
             const getUser = async () => {
                 try {
+                    setIsLoading(true);
                     const res = await axios.get('/user/info',
                     {
                         headers: {Authorization: token}
                     })
                     setUser(res.data)
+                    setIsLoading(false)
                 } catch (err) {
                     alert(err.response.data.msg)
                 }
             }
             getUser()
+            
         }
     },[token])
   return (
+    isLoading ? <h1>Loading...</h1> : 
     isLogged ? (
     <section>
       <div className="registerContainer">
@@ -45,7 +50,7 @@ const Details = () => {
           <input type="text" name='email' value={user.email} className='registerInput'disabled/>
         </div>
         <div className="registerBtnContainer">
-          <Link to='/'><button className='registerBtn'>Home</button></Link>
+          <Link to='/'><button className='btn registerBtn'>Home</button></Link>
           {/* <Link to='/login' className='registerBtn'><button>Login</button></Link> */}
         </div>
       </div>

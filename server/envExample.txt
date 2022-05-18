@@ -1,0 +1,5 @@
+MONGODB_URL = mongodb+srv://<username>:<password>@cluster0.kmf84.mongodb.net/?retryWrites=true&w=majority
+
+ACCESS_TOKEN_SECRET = !#{.=#{}WHfZ4}WZ+4cC~'_YX=]7U{^m*({a$]S52Y8zryA5AB
+
+REFRESH_TOKEN_SECRET = hf[vv)Z!4P:3$]a*TqY,_^*}Cr~T>W6#E#)qT{32PuNrKP+xW.[~'s'8>VJ("y/8&!tZsPCKQc~SATBpAqW?{:>7-U^[cDYjzR8b

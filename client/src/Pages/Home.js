@@ -23,7 +23,7 @@ const Home = () => {
     }
   }
   return (
-    <div>
+    <div className='home'>
       <h1>Home</h1>
       <Link to='/login'><button className='btn'>Login</button></Link>
       <Link to='/register'><button className='btn'>Register</button></Link>

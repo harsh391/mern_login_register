@@ -25,6 +25,7 @@ const UsersAPI = (token) => {
         }
 
     },[token])
+    console.log(isLogged);
   return (
     {
         isLogged: [isLogged, setIsLogged],
